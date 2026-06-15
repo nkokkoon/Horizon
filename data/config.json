@@ -1,14 +1,9 @@
 {
   "version": "1.0",
   "ai": {
-    "provider": "openai",
-    "model": "gpt-4",
-    "api_key_env": "OPENAI_API_KEY",
-    "temperature": 0.3,
-    "max_tokens": 4096,
-    "throttle_sec": 0,
-    "analysis_concurrency": 1,
-    "enrichment_concurrency": 1
+    "provider": "claude",
+    "model": "claude-sonnet-4-6",
+    "api_key_env": "ANTHROPIC_API_KEY"
   },
   "email": {
     "enabled": false,
@@ -53,6 +48,11 @@
         "enabled": false,
         "category": "linux"
       }
+      { "name": "Schneier on Security", "url": "https://www.schneier.com/feed/atom/" },
+      { "name": "Krebs on Security", "url": "https://krebsonsecurity.com/feed/" },
+      { "name": "The Register Security", "url": "https://www.theregister.com/security/headlines.atom" },
+      { "name": "CISA Advisories", "url": "https://www.cisa.gov/news.xml" },
+      { "name": "Dark Reading", "url": "https://www.darkreading.com/rss.xml" }
     ],
     "reddit": {
       "enabled": true,
@@ -116,6 +116,14 @@
     "category_groups": {},
     "default_group": "other",
     "default_group_limit": null
+    "interests": [
+      "AI security",
+      "agentic systems",
+      "threat intelligence",
+      "vulnerability management",
+      "zero trust",
+      "CISO governance"
+    ]
   },
   "webhook": {
     "enabled": false,
@@ -158,5 +166,9 @@
       }
     },
     "headers": ""
+  }
+    "output": {
+    "language": "en",
+    "github_pages": true
   }
 }
