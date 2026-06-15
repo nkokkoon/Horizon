@@ -1,9 +1,10 @@
 name: Daily Horizon Summary
 
 on:
-  # schedule:
+  schedule:
   #   - cron: '0 0 */2 * *'  # Runs every 2 days at 00:00 UTC
   #     timezone: 'Asia/Shanghai'
+    - cron: '0 23 * * *'   # 7am SGT (UTC+8) = 11pm UTC previous day
   workflow_dispatch:      # Allow manual trigger
 
 jobs:
@@ -34,10 +35,10 @@ jobs:
         env:
           # Map secrets to environment variables expected by config.json
           # Modify these based on your data/config.github.json provider settings
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          # OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-          LWN_KEY: ${{ secrets.LWN_KEY }}
+          # GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          # LWN_KEY: ${{ secrets.LWN_KEY }}
         run: uv run horizon --hours 48
 
       - name: Set current date as environment variable
