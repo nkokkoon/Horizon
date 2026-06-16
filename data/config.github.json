@@ -32,7 +32,7 @@
       { "name": "Detection Engineering", "url": "https://www.detectionengineering.net/feed"},
       { "name": "Daniel Miessler", "url": "https://danielmiessler.com/feed/"},
       { "name": "Bleeping Computer", "url": "https://www.bleepingcomputer.com/feed/", "category": "cyber"},
-      { "name": "Security News | VentureBeat", "url": "https://venturebeat.com/category/security/feed/", "category": "cyber"}
+      { "name": "Security News | VentureBeat", "url": "https://venturebeat.com/category/security/feed/", "category": "cyber"},
       { "name": "Krebs on Security", "url": "https://krebsonsecurity.com/feed/", "category": "cyber"},
       { "name": "The Register Security", "url": "https://www.theregister.com/security/headlines.atom", "category": "cyber"},
       { "name": "Trail of Bits Blog", "url" :"https://blog.trailofbits.com/feed/", "category": "cyber"},
