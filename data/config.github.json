@@ -3,7 +3,7 @@
   "ai": {
     "provider": "anthropic",
     "model": "claude-sonnet-4-6",
-    "api_key_env": "ANTHROPIC_API_KEY"
+    "api_key_env": "ANTHROPIC_API_KEY",
     "temperature": 0.3,
     "max_tokens": 4096,
     "throttle_sec": 0,
