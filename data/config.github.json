@@ -22,12 +22,31 @@
     "unsubscribe_keyword": "UNSUBSCRIBE"
   },
   "sources": {
+    "github": [
+      {
+        "type": "user_events",
+        "username": "torvalds",
+        "enabled": false
+      },
+      {
+        "type": "repo_releases",
+        "owner": "astral-sh",
+        "repo": "uv",
+        "enabled": true
+      }
+    ],
     "hackernews": {
       "enabled": true,
       "fetch_top_stories": 20,
       "min_score": 100
     },
     "rss": [
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/atom/everything/",
+        "enabled": true,
+        "category": "ai-tools"
+      },
       { "name": "Schneier on Security", "url": "https://www.schneier.com/feed/atom/" },
       { "name": "Detection Engineering", "url": "https://www.detectionengineering.net/feed"},
       { "name": "Daniel Miessler", "url": "https://danielmiessler.com/feed/"},
@@ -43,10 +62,10 @@
       { "name": "WeLiveSecurity", "url": "https://www.welivesecurity.com/en/rss/feed/"},
       { "name": "security – Ars Technica", "url": "https://arstechnica.com/tag/security/feed"},
       {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/atom/everything/",
-        "enabled": true,
-        "category": "ai-tools"
+        "name": "LWN.net (subscriber full-text)",
+        "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
+        "enabled": false,
+        "category": "linux"
       }
     ],
     "reddit": {
@@ -61,17 +80,49 @@
           "min_score": 50
         }
       ],
+      "users": [
+        {
+          "username": "iamthatis",
+          "enabled": false,
+          "sort": "new",
+          "fetch_limit": 10
+        }
+      ],
       "fetch_comments": 5
     },
     "twitter": {
       "enabled": false,
-      "users": ["cyb3rops", "clintgibler"],
+      "users": ["karpathy", "ylecun"],
       "fetch_limit": 10,
       "fetch_reply_text": false,
       "max_replies_per_tweet": 3,
       "max_tweets_to_expand": 10,
       "reply_min_likes": 5
     },
+    "openbb": {
+      "enabled": false,
+      "fetch_filings": false,
+      "filings_provider": "sec",
+      "watchlists": [
+        {
+          "name": "megacaps",
+          "enabled": false,
+          "provider": "yfinance",
+          "fetch_limit": 20,
+          "category": "equities",
+          "symbols": ["AAPL", "MSFT", "NVDA", "GOOGL", "AMZN", "META", "TSLA"]
+        }
+      ]
+    },
+    "ossinsight": {
+      "enabled": false,
+      "period": "past_24_hours",
+      "languages": ["All", "Python", "TypeScript"],
+      "keywords": [],
+      "min_stars": 10,
+      "max_items": 30
+    }
+  },
   "filtering": {
     "ai_score_threshold": 7.5,
     "time_window_hours": 24,
@@ -121,10 +172,5 @@
       }
     },
     "headers": ""
-  },
-    "output": {
-    "language": "en",
-    "github_pages": true
-  }  
-}
+  }
 }
