@@ -5,17 +5,17 @@
     "model": "claude-sonnet-4-6",
     "api_key_env": "ANTHROPIC_API_KEY"
   },
- # "email": {
- #   "enabled": false,
- #   "smtp_server": "smtp.qq.com",
- #   "smtp_port": 465,
- #   "imap_server": "imap.qq.com",
- #   "imap_port": 993,
- #   "email_address": "xxx@qq.com",
- #   "sender_name": "Horizon Daily",
- #   "subscribe_keyword": "SUBSCRIBE",
- #   "unsubscribe_keyword": "UNSUBSCRIBE"
- # },
+  "email": {
+     "enabled": false,
+    "smtp_server": "smtp.qq.com",
+    "smtp_port": 465,
+    "imap_server": "imap.qq.com",
+    "imap_port": 993,
+    "email_address": "xxx@qq.com",
+    "sender_name": "Horizon Daily",
+    "subscribe_keyword": "SUBSCRIBE",
+    "unsubscribe_keyword": "UNSUBSCRIBE"
+  },
   "sources": {
     "github": [
       {
