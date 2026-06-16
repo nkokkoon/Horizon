@@ -6,7 +6,7 @@
     "api_key_env": "ANTHROPIC_API_KEY"
   },
   "email": {
-     "enabled": false,
+    "enabled": false,
     "smtp_server": "smtp.qq.com",
     "smtp_port": 465,
     "imap_server": "imap.qq.com",
