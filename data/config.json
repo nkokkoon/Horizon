@@ -115,7 +115,7 @@
     "max_items": null,
     "category_groups": {},
     "default_group": "other",
-    "default_group_limit": null
+    "default_group_limit": null,
     "interests": [
       "AI security",
       "agentic systems",
@@ -166,7 +166,7 @@
       }
     },
     "headers": ""
-  }
+  },
     "output": {
     "language": "en",
     "github_pages": true
