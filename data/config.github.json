@@ -41,6 +41,11 @@
       "min_score": 100
     },
     "rss": [
+      { "name": "Schneier on Security", "url": "https://www.schneier.com/feed/atom/" },
+      { "name": "Krebs on Security", "url": "https://krebsonsecurity.com/feed/" },
+      { "name": "The Register Security", "url": "https://www.theregister.com/security/headlines.atom" },
+      { "name": "CISA Advisories", "url": "https://www.cisa.gov/news.xml" },
+      { "name": "Dark Reading", "url": "https://www.darkreading.com/rss.xml" },
       {
         "name": "Simon Willison",
         "url": "https://simonwillison.net/atom/everything/",
