@@ -121,5 +121,9 @@
       }
     },
     "headers": ""
-  }
+  },
+    "output": {
+    "language": "en",
+    "github_pages": true
+  }  
 }
