@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Horizon Summary: 2026-06-15 (EN)"
-date: 2026-06-15
+title: "Horizon Summary: 2026-06-17 (EN)"
+date: 2026-06-17
 lang: en
 ---
 
