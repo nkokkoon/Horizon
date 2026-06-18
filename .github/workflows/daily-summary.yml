@@ -4,7 +4,7 @@ on:
   schedule:
   #   - cron: '0 0 */2 * *'  # Runs every 2 days at 00:00 UTC
   #     timezone: 'Asia/Shanghai'
-    - cron: '0 23 * * *'   # 7am SGT (UTC+8) = 11pm UTC previous day
+  #  - cron: '0 23 * * *'   # 7am SGT (UTC+8) = 11pm UTC previous day
   workflow_dispatch:      # Allow manual trigger
 
 jobs:
